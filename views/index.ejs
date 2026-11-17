@@ -1,11 +1,44 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('partials/header') %>
+
+<section class="hero text-center py-5">
+  <i class="fa-solid fa-laptop-code fa-4x text-primary mb-4"></i>
+  <h1 class="display-4 fw-bold">Hi, I'm Ashwin Aju</h1>
+  <p class="lead text-muted mb-4">
+    Welcome to my portfolio. I build web applications and love turning ideas into working software.
+  </p>
+  <a href="/projects" class="btn btn-primary btn-lg me-2 mb-2">
+    <i class="fa-solid fa-code"></i> View My Projects
+  </a>
+  <a href="/contact" class="btn btn-outline-dark btn-lg mb-2">
+    <i class="fa-solid fa-envelope"></i> Contact Me
+  </a>
+</section>
+
+<section class="row g-4 mt-2">
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm text-center p-4">
+      <i class="fa-solid fa-user fa-2x text-primary mb-3"></i>
+      <h5>About Me</h5>
+      <p class="text-muted">Learn about my background, education, and skills.</p>
+      <a href="/about" class="stretched-link"></a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm text-center p-4">
+      <i class="fa-solid fa-diagram-project fa-2x text-primary mb-3"></i>
+      <h5>Projects</h5>
+      <p class="text-muted">See the projects I've built and the technologies I used.</p>
+      <a href="/projects" class="stretched-link"></a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm text-center p-4">
+      <i class="fa-solid fa-paper-plane fa-2x text-primary mb-3"></i>
+      <h5>Contact</h5>
+      <p class="text-muted">Get in touch with me or find me on social media.</p>
+      <a href="/contact" class="stretched-link"></a>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
