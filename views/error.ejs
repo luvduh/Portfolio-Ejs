@@ -1,10 +1,7 @@
 <%- include('partials/header') %>
 
-<div class="text-center py-5">
-  <i class="fa-solid fa-triangle-exclamation fa-4x text-warning mb-3"></i>
-  <h1><%= error.status || '' %> <%= message %></h1>
-  <a href="/" class="btn btn-primary mt-3"><i class="fa-solid fa-house"></i> Back to Home</a>
-  <% if (error.stack) { %><pre class="text-start mt-4"><%= error.stack %></pre><% } %>
-</div>
+<h1><%= error.status || '' %> <%= message %></h1>
+<p>That page doesn't exist. <a href="/">Go back home</a>.</p>
+<% if (error.stack) { %><pre class="mt-4"><%= error.stack %></pre><% } %>
 
 <%- include('partials/footer') %>

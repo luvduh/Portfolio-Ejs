@@ -1,67 +1,39 @@
 <%- include('partials/header') %>
 
-<h1 class="mb-4"><i class="fa-solid fa-user text-primary"></i> <%= title %></h1>
+<h1>About</h1>
 
-<div class="row g-4">
-  <!-- Biography -->
-  <div class="col-lg-8">
-    <div class="card shadow-sm p-4 h-100">
-      <h4><i class="fa-solid fa-book-open text-primary"></i> My Story</h4>
-      <p>
-        Hi! I'm Ashwin Aju, a developer who enjoys building websites and applications
-        that are clean, fast, and easy to use. I got into programming because I like
-        solving problems and seeing my ideas come to life on the screen.
-      </p>
-      <p class="mb-0">
-        Right now I'm focused on full-stack web development with JavaScript, using
-        Node.js and Express on the back end and Bootstrap on the front end.
-      </p>
-    </div>
-  </div>
+<p class="intro">
+  I got into programming because I like figuring out how things work and then
+  making my own version. Lately that's mostly been websites.
+</p>
 
-  <!-- Education -->
-  <div class="col-lg-4">
-    <div class="card shadow-sm p-4 h-100">
-      <h4><i class="fa-solid fa-graduation-cap text-primary"></i> Education</h4>
-      <!-- TODO: replace with your school, program, and years -->
-      <p class="fw-semibold mb-1">Your School Name</p>
-      <p class="text-muted mb-0">Your Program &middot; 20XX &ndash; 20XX</p>
-    </div>
-  </div>
+<p>
+  Right now I'm learning full-stack development with JavaScript. I like keeping
+  things simple and making pages that are easy to use on both a laptop and a phone.
+</p>
 
-  <!-- Skills -->
-  <div class="col-lg-8">
-    <div class="card shadow-sm p-4 h-100">
-      <h4 class="mb-3"><i class="fa-solid fa-screwdriver-wrench text-primary"></i> Technical Skills</h4>
-      <div class="row row-cols-2 row-cols-md-4 g-3 text-center">
-        <div class="col"><div class="skill"><i class="fa-brands fa-html5 fa-2x"></i><span>HTML</span></div></div>
-        <div class="col"><div class="skill"><i class="fa-brands fa-css3-alt fa-2x"></i><span>CSS</span></div></div>
-        <div class="col"><div class="skill"><i class="fa-brands fa-js fa-2x"></i><span>JavaScript</span></div></div>
-        <div class="col"><div class="skill"><i class="fa-brands fa-node-js fa-2x"></i><span>Node.js</span></div></div>
-        <div class="col"><div class="skill"><i class="fa-solid fa-server fa-2x"></i><span>Express</span></div></div>
-        <div class="col"><div class="skill"><i class="fa-solid fa-file-code fa-2x"></i><span>EJS</span></div></div>
-        <div class="col"><div class="skill"><i class="fa-brands fa-bootstrap fa-2x"></i><span>Bootstrap</span></div></div>
-        <div class="col"><div class="skill"><i class="fa-brands fa-git-alt fa-2x"></i><span>Git &amp; GitHub</span></div></div>
-      </div>
-    </div>
-  </div>
+<h2>Education</h2>
+<p>
+  <strong>Ontario Tech University</strong><br>
+  <span class="muted">IT & Networking</span>
+</p>
 
-  <!-- Interests -->
-  <div class="col-lg-4">
-    <div class="card shadow-sm p-4 h-100">
-      <h4><i class="fa-solid fa-lightbulb text-primary"></i> Interests</h4>
-      <ul class="list-unstyled mb-0">
-        <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Full-stack web development</li>
-        <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Responsive UI design</li>
-        <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Cloud deployment</li>
-        <li><i class="fa-solid fa-check text-success me-2"></i>Learning new technologies</li>
-      </ul>
-    </div>
-  </div>
-</div>
+<h2>What I work with</h2>
+<ul class="tags">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>Node.js</li>
+  <li>Express</li>
+  <li>EJS</li>
+  <li>Bootstrap</li>
+  <li>GitHub</li>
+</ul>
 
-<div class="text-center mt-5">
-  <a href="/projects" class="btn btn-primary btn-lg"><i class="fa-solid fa-code"></i> See My Projects</a>
-</div>
+<h2>Interests</h2>
+<p>
+  Web development, clean design, and putting projects online so people can
+  actually use them.
+</p>
 
 <%- include('partials/footer') %>

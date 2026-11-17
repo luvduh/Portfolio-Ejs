@@ -1,40 +1,130 @@
+:root {
+  --paper: #f7f4ee;
+  --ink: #1f1f1f;
+  --muted: #6e6a63;
+  --line: #ddd6ca;
+  --accent: #b0482b;
+}
+
 body {
-  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+.page {
+  max-width: 720px;
+}
+
 main {
   flex: 1;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
-.hero {
-  border-bottom: 1px solid #e5e5e5;
+h1, h2, .navbar-brand, .big-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
 }
 
-.card {
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.big-name {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.intro {
+  font-size: 1.2rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+.site-nav {
+  border-bottom: 1px solid var(--line);
+}
+
+.site-nav .navbar-brand {
+  color: var(--ink);
+  font-size: 1.3rem;
+}
+
+.site-nav .nav-link {
+  color: var(--muted);
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+  color: var(--ink);
+}
+
+.site-nav .nav-link.active {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+}
+
+.navbar-toggler {
   border: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: var(--ink);
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+.link-list {
+  padding-left: 1.2rem;
 }
 
-.skill {
+.tags {
+  list-style: none;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 1rem 0.5rem;
-  border-radius: 0.5rem;
-  background: #f8f9fa;
-  color: #0d6efd;
 }
 
-.skill span {
-  color: #212529;
+.tags li {
+  border: 1px solid var(--line);
+  padding: 0.1rem 0.7rem;
+  font-size: 0.95rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
   font-size: 0.9rem;
+  padding: 1.25rem 0;
+}
+
+.site-footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--accent);
 }
